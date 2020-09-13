@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <title>Samesite Demo</title>
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+  <script>  
+  
+console.log("ssss1");
+console.log("li "+$('body > ol > li').text());
+
+$('body > ol > li').each( function( i, val ) {
+
+ console.log(["i:", i , " val :" , $(val).data('mode')]);
+  
+  $(val).click(function() {
+ 
+    // Will stop running after "three"
+    $.ajax(
+      {
+        url: "https://d31ba015ad74.ngrok.io/login/samesite-"+$(val).data('mode') , 
+        success: function(result){ 
+           var mode = $.cookie("samesite-"+$(val).data('mode'));
+          console.log("model : " +$(val).data('mode'))
+          console.log("model : " +mode)
+          
+          //$("#div1").html(result);
+          }
+      });
+    
+  });
+  
+})
+
+
+  </script>
+<body>
+List</h2>
+<p>
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>  
+
+<h2>An Ordered HTML List</h2>
+
+<ol>
+  <li data-mode="default">Samesite - default</li>
+  <li data-mode="lax">Samesite - lax</li>
+  <li data-mode="none">Samesote - none</li>
+  <li data-mode="strict">Samesote - strict</li>
+</ol> 
+  <div id="div1"></div>
+  </p>
+</body>
+</html>
