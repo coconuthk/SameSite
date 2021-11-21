@@ -1,10 +1,10 @@
-## RECSRecommendations Upload File
-## RECS''## RECS'' indicates a Recommendations pre-process header. Please do not remove these lines.
-## RECS
-## RECSUse this file to upload product display information to Recommendations. Each product has its own row. Each line must contain 19 values and if not all are filled a space should be left.
-## RECSThe last 100 columns (entity.custom1 - entity.custom100) are custom. The name 'customN' can be replaced with a custom name such as 'onSale' or 'brand'.
-## RECSIf the products already exist in Recommendations then changes uploaded here will override the data in Recommendations. Any new attributes entered here will be added to the product''s entry in Recommendations.
+## RECSRecommendations Upload File,,,,,,,,,,,,,,,,,,,
+## RECS''## RECS'' indicates a Recommendations pre-process header. Please do not remove these lines.,,,,,,,,,,,,,,,,,,,
+## RECS,,,,,,,,,,,,,,,,,,,
+## RECSUse this file to upload product display information to Recommendations. Each product has its own row. Each line must contain 19 values and if not all are filled a space should be left.,,,,,,,,,,,,,,,,,,,
+## RECSThe last 100 columns (entity.custom1 - entity.custom100) are custom. The name 'customN' can be replaced with a custom name such as 'onSale' or 'brand'.,,,,,,,,,,,,,,,,,,,
+## RECSIf the products already exist in Recommendations then changes uploaded here will override the data in Recommendations. Any new attributes entered here will be added to the product''s entry in Recommendations.,,,,,,,,,,,,,,,,,,,
 ## RECSentity.id,entity.name,entity.categoryId,entity.message,entity.thumbnailUrl,entity.value,entity.pageUrl,entity.inventory,entity.margin,entity.custom1,entity.custom2,entity.custom3,entity.custom4,entity.custom5,entity.custom6,entity.custom7,entity.custom8,entity.custom9,entity.custom10,...
-01,Wisdom Term,life-protection,,https://ishop.aia.com.hk/content/dam/hk-ecom/images/products/wisdom-term.png, ,https://ishop.aia.com.hk/en/life-protection/wisdom-term.html
-02,Cancer Guardian Series,medical-protection,,https://ishop.aia.com.hk/content/dam/hk-ecom/images/products/cancer-guardian-series.png, ,https://ishop.aia.com.hk/en/medical-protection/cancer-guardian-2-series.html
-03,iTravel Protect, general-insurance,,https://ishop.aia.com.hk/content/dam/hk-ecom/images/products/itravel-protect.png, ,https://ishop.aia.com.hk/en/general-insurance/itravel-protect.html
+1,Wisdom Term,life-protection,dummy,https://ishop.aia.com.hk/content/dam/hk-ecom/images/products/wisdom-term.png,dummy,https://ishop.aia.com.hk/en/life-protection/wisdom-term.html,dummy,dummy,dummy,dummy,dummy,dummy,dummy,dummy,dummy,dummy,dummy,dummy,
+2,Cancer Guardian Series,medical-protection,dummy,https://ishop.aia.com.hk/content/dam/hk-ecom/images/products/cancer-guardian-series.png,dummy,https://ishop.aia.com.hk/en/medical-protection/cancer-guardian-2-series.html,dummy,dummy,dummy,dummy,dummy,dummy,dummy,dummy,dummy,dummy,dummy,dummy,
+3,iTravel Protect, general-insurance,dummy,https://ishop.aia.com.hk/content/dam/hk-ecom/images/products/itravel-protect.png,dummy,https://ishop.aia.com.hk/en/general-insurance/itravel-protect.html,dummy,dummy,dummy,dummy,dummy,dummy,dummy,dummy,dummy,dummy,dummy,dummy,
